@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {  
+    background: linear-gradient(150deg, rgba(255, 255, 255, 0.199), #0018cc5e 100%, 
+    transparent), url("image/pexels-sandra-rei.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;   
+}
+
+section { 
+    width: 100%;
+    height: 2500px;
+}
+.btn_up{
+      display: none;
+}
+.titre_des_card {
+    display: none;
+}
+.btn_retour { 
+     position: absolute;
+     left: 50px;
+     top: 60px;
+     background-color: #dcc0ac;
+     border-radius: 50%;
+     width: 60px;
+     height: 60px;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     border: 2px solid #fff;
+    }
+.btn_retour i{
+    font-size: 2rem;
+    color:#0018CC;
+
+}
+.titre_galerie { 
+    text-align: center;
+    margin: 40px 0 100px 0;
+  
+}
+.titre_galerie h2{
+    font-size: 3.5rem;
+    color: #0018CC;
+    text-shadow: 0 0 5px #fff;
+    margin-bottom: 50px;
+}
+
+.container_galerie{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 150px  30px;
+
+}
+.card{ 
+    justify-self: center;
+
+}
+
+
+.container_card,
+.text_card,
+.image_card img{
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+
+}
+
+.container_card {
+    position: relative;
+    /* border: 1px solid green; */
+    
+}
+
+.text_card{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.705);
+    text-shadow: 0 0 5px #0018CC;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem;
+    
+}
+
+.text_card:hover {
+    
+
+    z-index:1; 
+}
+
+.image_card {
+    position: absolute;
+
+}
+.image_card:hover {
+    z-index: -2;
+   
+}
+
+.btn_top{
+    position: absolute;
+    right: 10px;
+background-color: #dcc0ac;
+width: 70px;
+height: 70px;
+display:flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+}
+.btn_top i { 
+    color:#0018CC;
+    font-size:2rem;
+    
+}
+
+
+
+
+
+@media (min-width:1060px) and (max-width:1599px){
+
+    section { 
+        height: 3900px;
+    }
+   
+
+    .container_galerie{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        
+        
+    }
+
+
+}
+
+@media (min-width: 875px) and (max-width: 1059px) {
+    
+    section {
+        height: 3400px;
+    }
+
+    .container_card,
+    .text_card,
+    .image_card img{
+        width: 400px;
+        height: 250px;
+
+    }
+    
+.container_galerie{
+        
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+}
+
+
+}
+
+@media (min-width: 675px) and (max-width: 874px) {
+
+section { 
+    height: 3600px;
+}
+.titre_des_card{ 
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: 85px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    
+}
+.container_titre_card p{
+    
+    background-color: rgba(0, 0, 0, 0.639);
+    color: #fff;
+    width: 270px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 2px solid #0018ccd7;
+    font-weight: bold;
+    padding: 0 0.11rem;
+}
+.text_card{
+    display:none;
+}
+
+.titre_galerie h2{
+    font-size: 2.8rem;
+
+}
+.container_galerie{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+}
+
+.container_card,
+.text_card,
+.image_card img{
+            width: 300px;
+            height: 200px;
+    }
+    .text_card{
+        
+        font-size: 1.5rem;
+      
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 674px){
+    body {
+        background: none;
+        background: #0018cc89;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #dcc0acb1, #fff, #0018cc89);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #dcc0acb1, #fff, #0018cc89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    }
+  
+    .btn_up {
+        display: initial;
+        position: fixed;
+        bottom: 40px;
+        right: 6px;
+        font-size: 20px;
+        background-color: #dcc0ac;
+        width: 29px;
+        height: 29px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #fff;
+        border-radius: 50%;
+
+    }
+    .btn_up a { 
+        color:#0018CC;
+        text-decoration:none;
+    }
+    
+    
+
+    .titre_des_card{ 
+        display: block;
+        text-align: center;
+        width: 300px;
+        height: 85px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        
+    }
+    .container_titre_card p{
+        
+        background-color: rgba(0, 0, 0, 0.639);
+        color: #fff;
+        width: 270px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        border: 3px solid #0018ccd7;
+        padding: 0 0.11rem;
+    }
+    .text_card{
+        display:none;
+    }
+    .btn_retour { 
+        position: absolute;
+        left: 0;
+        right:0;
+        margin-left: auto;
+        margin-right: auto;
+        top: 110px;
+    
+       }
+    
+    section{ 
+        height: 6200px;
+
+    }
+    .titre_galerie h2{
+        font-size: 2.5rem;
+    
+    }
+    .container_galerie{
+       
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        gap: 100px  30px;
+       
+   
+}
+.container_card,
+    .text_card,
+    .image_card img{
+        width: 300px;
+        height: 200px;
+    
+    }
+    .text_card{
+        
+        font-size: 1.5rem;
+      
+    }
+
+}

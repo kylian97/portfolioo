@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+section {
+          background-color: hsl(226, 43%, 10%);
+          height: 100vh;
+          display:flex;
+          justify-content:center;
+          align-items: center;
+      }
+
+/* conteneur de toutes les cartes */
+
+.container-card {
+                  /* border:1px solid white; */
+                  width:90%;
+                  max-width: 1100px;
+                
+                  height: 50%;
+                  min-height: 550px;
+                  display: grid;
+                  grid-template-areas: "card1 card2 card3 card4"
+                                      "card1 card5 card6 card7";
+                  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+                }
+   /* conteneur de toutes les cartes */
+
+
+ /* Carte 1 principale */
+.card1 { 
+          grid-area: card1 ;
+          /* border: 1px solid white; */
+          color: white; 
+       }
+
+
+.card1 img {
+             width: 75px;
+             border-radius: 50%;
+             border: 2px solid white;
+           }
+
+.exterieur-card1 { 
+                  /* border: 1px solid red; */
+                  
+                  height:91%;
+                  min-width: 210px;
+                  width:85%;
+                  background-color:hsl(235, 46%, 20%);
+                  border-radius: 15px;
+                }
+.info-top-avatar-card1 { 
+                        background-color:hsl(246, 80%, 60%);
+                        border-radius: 15px;
+                        height: 70%;
+                        display:flex;
+                        align-items: center;
+                        padding-left: 20px;
+                      }
+
+
+
+
+.container-info { 
+                  /* border:1px yellow solid; */
+                  height: 90%;
+                  
+                  width: 90%;
+                  display:flex;
+                  flex-direction: column;
+                  justify-content: space-around;
+                  padding-bottom: 20px
+                }
+
+.container-info p {
+                    font-size: 1em;
+                  }
+.container-info h3 { 
+                    font-size: 3em;
+                    padding-bottom: 40px;
+                    font-weight:400 ;
+                   }
+.last-week {
+             padding-left: 10px;
+             font-weight:200;
+             font-size: 0.8em;
+            color: hsl(237, 30%, 65%);
+}
+.bottom-card1{
+                /* border: 1px solid green; */
+                border-radius: 10px;
+                background-color: hsl(235, 46%, 20%);
+                height: 30%;
+                display: flex;
+                justify-content: space-around ;
+                flex-direction: column;
+                padding: 16px;
+             }
+
+.bottom-card1 p {
+                   color: hsl(237, 30%, 65%);
+}
+.bottom-card1 p:hover {
+                      cursor:pointer;
+                       color:white;
+}
+/* Carte 1 principale */
+
+
+/* toutes les cartes a droite */
+
+.exterieur-card {
+                  height: 80%;
+                  max-height: 210px;
+                  width: 92%;
+                  min-width:150px;
+                   /* border: 1px solid white; */
+                  border-radius: 10px;
+                }
+
+.container-infos {
+                    /* border:1px solid red; */
+                     height:50px;
+                     border-radius: 10px;
+                   }
+.bottom-card {
+               /* border: 1px solid green; */
+                border-radius: 10px;
+                height: 168px;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-left: 8px;
+                                }
+.top-bottom-card{ 
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding-top: 15px
+                }
+
+.top-bottom-card img { 
+                        height: 5px;
+                        padding-right: 5px;
+                     }
+.bottom-bottom-card h4 { 
+                        font-size: 3em;
+                        font-weight: 200;
+                        padding-bottom: 15px;
+                        padding-left: 10px;
+                        
+                       }
+.bottom-bottom-card p { 
+                       padding-bottom: 20px;
+                     }
+
+.card {
+      display:flex;
+      align-items:center;
+      justify-content: center;
+}
+.card2 { 
+            grid-area: card2 ;
+            /* border: 1px solid white; */
+            color:white;
+            
+      }
+.card3 { 
+            grid-area: card3 ;
+            /* border: 1px solid white; */
+            color:white;
+       }
+.card4 {
+            grid-area: card4 ;
+            /* border: 1px solid white; */
+            color:white;
+        }
+.card5 {
+            grid-area: card5 ;
+            /* border: 1px solid white; */
+            color:white;
+       }
+.card6 { 
+        grid-area: card6 ;
+        /* border: 1px solid white; */
+        color:white;
+       }
+.card7 {
+        grid-area: card7 ;
+        /* border: 1px solid white; */
+        color:white;
+     }
+
+
+
+.container-infos-card2 { 
+                        background-image: url("images/icon-work.svg");
+                        background-position: top 0px right 0px;
+                        background-repeat: no-repeat;
+                        background-size: 60px;
+                        background-color:hsl(15, 100%, 70%);
+
+                      }
+.container-infos-card3 {
+                          background-image: url("images/icon-play.svg");
+                          background-position: top 0px right 0px;
+                          background-repeat: no-repeat;
+                          background-size: 60px;
+                          background-color:hsl(195, 74%, 62%);
+                        }
+.container-infos-card4 {
+                          background-image: url("images/icon-study.svg");
+                          background-position: top 0px right 0px;
+                          background-repeat: no-repeat;
+                          background-size: 60px;
+                          background-color:hsl(348, 100%, 68%);
+                        }
+.container-infos-card5 { 
+                           background-image: url("images/icon-exercise.svg");
+                           background-position: top 0px right 0px;
+                           background-repeat: no-repeat;
+                           background-size: 60px;
+                           background-color:hsl(145, 58%, 55%);
+                        }
+
+.container-infos-card6 { 
+                           background-image: url("images/icon-social.svg");
+                           background-position: top 0px right 0px;
+                           background-repeat: no-repeat;
+                           background-size: 60px;
+                           background-color:hsl(264, 64%, 52%);
+                          }
+.container-infos-card7 { 
+                           background-image: url("images/icon-self-care.svg");
+                           background-position: top 0px right 0px;
+                           background-repeat: no-repeat;
+                           background-size: 60px;
+                           background-color:hsl(43, 84%, 65%);
+                          }
+
+
+
+
+.exterieur-card2 { 
+                   background-color: hsl(15, 100%, 70%);
+                }
+.exterieur-card3 {
+                  background-color: hsl(195, 74%, 62%);
+                }
+.exterieur-card4{
+                  background-color:hsl(348, 100%, 68%);
+                } 
+.exterieur-card5{
+                  background-color: hsl(145, 58%, 55%);
+                }
+.exterieur-card6 {
+                  background-color:hsl(264, 64%, 52%);
+                }
+.exterieur-card7 {
+                   background-color: hsl(43, 84%, 65%);
+                 }
+
+
+
+
+
+.bottom-card {
+                  background-color: hsl(235, 46%, 20%);
+            }
+.bottom-card:hover { 
+                    background-color: hsl(236, 41%, 34%);
+              
+}
+                        
+
+
+@media (max-width:715px) { 
+ 
+
+                            .container-card {   
+                                            grid-template-columns: 1fr;                   
+                                            display:grid;
+                                            grid-template-areas: "card1"
+                                                                  "card2"
+                                                                  "card3"
+                                                                  "card4"
+                                                                  "card5"
+                                                                  "card6"
+                                                                  "card7";
+                                            gap: 30px;
+                                          } 
+
+                              section { 
+                                        display:initial;
+                                      }
+                              body {
+                                      background-color: hsl(226, 43%, 10%);
+                                    }
+
+                              .exterieur-card1 {
+                                                 width : 93%;
+                                               }
+
+                              .container-info h3 {
+                                                  font-size: 2em;
+                                                }
+
+                              .container-info img {
+                                                    margin-top: 20px;
+                                                }
+
+                              .container-info {
+                                                width : 90%;
+                                              }
+
+                              .bottom-card1 {
+                                            display:flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                          }
+
+                              .top-bottom-card {
+                                                padding-top: 50px;
+                                                padding-left: 12px;
+                                                padding-right: 12px;
+                                              }
+
+                              .bottom-bottom-card {
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    align-items: center;
+                                                  }
+
+                              .bottom-bottom-card p { 
+                                                    padding-top: 50px;
+                                                    padding-right: 10px;
+                                                    }
+
+                              .info-name {
+                                          padding-top: 60px;
+                                          margin-left: 15px;
+                                        }
+
+                              .container-info { display:flex;
+                                              flex-direction: row;
+                                              align-items: center;
+                                              }
+
+                              .card1 {
+                                      width: 100%;
+                                    }
+                              .bottom-card1 {
+                                              display:flex;
+                                              flex-direction: row;
+                                          }
+                                    
+                              .last-week { 
+                                          margin-bottom: 35px;
+                                          font-size: 0.9em;
+                                        }
+   
+                          }
+
