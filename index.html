@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bienvenue sur mon Portfolio | Web Developpeur">
+  <link rel="icon" type="image/png" sizes="16x16" href="image/logo_bk.png">
+  <link rel="stylesheet" href="Portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Portfolio | Web Developpeur </title>
+</head>
+
+<body>
+  <div class="scroll_nav">
+    <a href="#showcase" title="Home"><i class="fa-solid fa-house"></i></a>
+    <a href="#infos" title="About Me"><i class="fa-solid fa-user"></i></a>
+    <a href="#competence" title="Compétences"><i class="fa-solid fa-laptop-code"></i></a>
+    <a href="#projets" title="Projets"><i class="fa-solid fa-briefcase"></i></a>
+    <a href="#contact" title="Contact"><i class="fa-solid fa-phone"></i></a>
+  </div>
+  <section id="showcase">
+    <div class="overlay"></div>
+    <header>
+      <nav id="navbar">
+        <div class="logo">
+          <p>Portfo<span>lio<span></p>
+        </div>
+        <div class="toggle">
+          <div class="ouvrir">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="fermer">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#infos">À propos</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="text-showcase">
+      <h2>Hi, I am <span class="input"> <span></h2>
+    </div>
+    <video class="video-desktop" src="video/video_background.mp4" autoplay loop muted> </video>
+    <video class="video-mobile" src="video/video_background.mp4" autoplay loop muted> </video>
+  </section>
+  <section id="infos">
+    <div class="container-infos">
+      <div class="haut_section_infos" data-aos="fade-down" data-aos-duration="1500" data-aos-delay= "100">
+        <h3 class="titre-infos">A Propos de <span class="color-secondary"> Moi</span></h3> <img src="image/me_computer.png" alt="">
+      </div>
+      <div class="container-text-infos" data-aos="flip-left" data-aos-duration="3000">
+        <p class="text-infos"> <span> Web Developpeur Junior</span></p>
+        <p class="text-infos"> Passionné d’informatique, j’ai appris à coder depuis 2021 dans différents langages
+          informatiques, je suis actuellement en formation de web développeur pour approfondir mes connaissances. </p>
+        <hr class="hr-card">
+        <p class="text-infos">J'aime relever les défis. C'est pourquoi je me challenge chaque jour, ce qui me permet de
+          me dépasser de jour en jour. </p>
+        <p class="text-infos"> Vous aurez le plaisir de voir sur cette page, dans la partie "projets", une partie de mes
+          créations, reproductions de site et challenges que j'ai éffectué. </p>
+        <hr class="hr-card">
+        <p class="text-infos text-infos-3"> Polyvalent, autonome de nature, je peux travailler seul ou en groupe, étant
+          également capable de m’adapter à un environnement que je ne connais pas. Je maîtrise les différentes étapes
+          techniques de la création d’un site ou d’une application web, de la compréhension des besoins utilisateurs, au
+          développement frontend en passant par la maintenance. </p>
+      </div>
+    </div>
+  </section>
+  <section id="competence">
+    <div class="titre_competence" data-aos="fade-down" data-aos-duration="1800">
+      <h3>Compétences</h3>
+    </div>
+    <div class="container_competence">
+      <div class="exterieur_card" data-aos="fade-right" data-aos-offset= "200" data-aos-duration = "1000">
+        <div class="card_competence front_end">
+          <h4>Front-end / Back-end</h4>
+          <div class="box_competence html">
+            <div class="text_competence"> <span class="colorTextCompetence"> HTML </span> <i
+                class="fa-brands fa-html5"></i> <span class="colorTextCompetence"> | CSS </span><i
+                class="fa-brands fa-css3-alt"></i> </div>
+            <div class="container_loading ">
+              <div class="loading_html_css">
+                <p> 80% </p>
+              </div>
+            </div>
+          </div>
+          <div class="box_competence css">
+            <div class="text_competence">
+              <p class="colorTextCompetence">PHP <i class="fa-brands fa-php"></i></p>
+            </div>
+            <div class="container_loading">
+              <div class="loading_php"> 55%</div>
+            </div>
+          </div>
+          <div class="box_competence javascript">
+            <div class="text_competence">
+              <p class="colorTextCompetence">JavaScript | jQuery</p>
+            </div>
+            <div class="container_loading">
+              <div class="loading_javascript">40%</div>
+            </div>
+          </div>
+          <div class="box_competence php">
+            <div class="text_competence">
+              <p class="colorTextCompetence">Symfony 6</p>
+            </div>
+            <div class="container_loading container_loading_php">
+              <div class="loading_php"> 55% </div>
+            </div>
+          </div>
+          <div class="box_competence javascript">
+            <div class="text_competence">
+              <p class="colorTextCompetence">Maquettage Web</p>
+            </div>
+            <div class="container_loading">
+              <div class="loading_maquettage"> 80%</div>
+            </div>
+          </div>
+        </div>
+        <div class="container_logo_competence"> <i class="fa-solid fa-code logo_competence"></i> </div>
+      </div>
+      <div class="exterieur_card" data-aos="fade-left" data-aos-offset="200" data-aos-duration = "1000">
+        <div class="container_logo_competence"> <i class="fa-solid fa-pen-ruler logo_competence"></i> </div>
+        <div class="card_competence environnement_travail">
+          <h4>Environnement de travail</h4>
+          <div class="text_environnement_travail">
+            <p><span class="weight"> Systèmes d'exploitation </span>: Windows 11.</p>
+            <p><span class="weight">IDE </span>: Visual Studio Code, Figma, FlowMapp, GitHub, Symfony 6.</p>
+            <p><span class="weight"> Savoir-être </span> : Capacité d'adaptation, travail en équipe, organisation,
+              rigueur, sérieux.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projets">
+    <h2 data-aos="fade-down" data-aos-duration="2500">Projets</h2>
+    <div class="container-box">
+      <div class="box card1" data-aos="fade-right" data-aos-duration= "700"> <a href="projet/split_landing_page/index.html" title="Click for look online shop"
+          target="_blank"> <video src="video/ps5_xbox.mp4" autoplay loop muted> </video></a> </div>
+      <div class="box card2" data-aos="fade-right" data-aos-duration= "700"> <a href="projet/retest_hotel_website/index.html" title="Click for look Hotel Website"
+          target="_blank"> <video src="video/hotel_final.mp4" autoplay loop muted></video> </a> </div>
+    </div> <a class="btn-projets" href="galerie.html" target="_blank">Clique ici pour la galerie projet</a>
+  </section>
+  <section id="contact">
+    <div class="text_contact">
+      <div class="titre_contact">
+        <h2>Contactez-Moi !</h2> <img src="image/me_call.png" alt="">
+      </div>
+      <div class="description_contact">
+        <p class="shadow_black">Actuellement à la recherche d'un stage en tant que</p>
+        <p><span> Web Développeur</span></p>
+      </div>
+    </div>
+    <div class="container_box">
+      <div class="contact_box contact_telephone" data-aos="flip-up">
+        <div class="card"> <i class="fa-solid fa-mobile-screen-button fa-4x"></i> <a href="tel:0696971866">
+            <p> 0696 97 18 66 </p>
+          </a> </div>
+      </div>
+      <div class="contact_box contact_mail" data-aos="flip-up">
+        <div class="card"> <i class="fa-solid fa-envelope fa-4x"></i> <a href="mailto:kylian.bellegarde@gmail.com">
+            <p> kylian.bellegarde@gmail.com </p>
+          </a> </div>
+      </div>
+      <div class="contact_box contact_linkedin" data-aos="flip-up">
+        <div class="card"> <i class="fa-brands fa-linkedin fa-4x"></i> <a
+            href="https://www.linkedin.com/in/kylian-bellegarde-b65574235" target="_blank">
+            <p>Mon LinkedIn </p>
+          </a> </div>
+      </div>
+    </div>
+    <!--container-box-->
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  <script src="Portfolio.js"></script>
+  <script>
+    var typed = new Typed(".input", {
+      strings: ['', 'Kylian', 'a Web Developer'],
+      typeSpeed: 70,
+      backSpeed: 60,
+      loop: true
+    });
+  </script>
+  
+</body>
+
+</html>
